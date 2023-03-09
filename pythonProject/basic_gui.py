@@ -8,7 +8,9 @@ window.minsize(width=200, height=200) # ต้องใส่ค่า default �
 title_label = tk.Label(master=window, text="calculator") #บอกว่า lebel นี้จะถูกใส่ไว้ที่ไหน ในตัวอย่างนี้คือ window
 title_label.pack()# เอา label แปะ ลงไป
 
-
+# text input
+text_input = tk.Entry(master=window)
+text_input.pack()
 window.mainloop()
 
 
