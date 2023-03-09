@@ -30,7 +30,7 @@ window.minsize(width=400,height=400)
 
 # 4 set label
 title_label = tk.Label(master=window,text="สูตรคูณแม่")
-title_label.pack()
+title_label.pack(pady=20)
 
 # 5 create input
 number_input = tk.Entry(master=window)
@@ -45,7 +45,7 @@ go_btn.pack()
 
 # 7 create result area
 output_label = tk.Label(master=window) #ยังไม่แสดงข้อความไว้แสดงตอน กด
-output_label.pack()
+output_label.pack(pady=20)
 
 # 8 run
 
@@ -55,6 +55,11 @@ output_label.pack()
 
 
 # 12 ไม่ต้องการให้คำนวน แม่ 0 เนื่องจาก 0 คูณ อะไรก็ได้ 0 ถ้าใส่ 0 ให้ จบการทำงาน
+
+# 13 จัดองค์ประกอบให้สวยงาม
+#  ใช้คำสั่ง pad x เพิ่มพื้นที่ว่างในแนวนอน
+#  ใช้คำสั่ง pad y เพิ่มพิ้นที่ว่างในแนวตั้ง
+
 
 
 window.mainloop()
