@@ -6,6 +6,18 @@
 # 1 import tkinter
 import tkinter as tk
 
+
+def show_output():
+    num = int(number_input.get()) # คำสั่ง get() will return string
+    
+    output = "" # ตอนแรกจะยังไม่มีข้อความอะไร
+    # เอา 1 ไป คูณ 12
+    for i in range (1, 13):
+        output += str(num) + " x " + str(i)# ต้องการให้มันต่อท้ายข้อความไปเรื่อย ๆ เช่น 1 x 1 = 1
+        output += " = " + str(num * i) + "\n"
+    output_label.configure(text=output)
+
+
 # 2 create window
 window = tk.Tk()
 window.title("basic python")
@@ -21,7 +33,10 @@ number_input = tk.Entry(master=window)
 number_input.pack()
 
 # 6 create btn
-go_btn = tk.Button(master=window,text="ได้แก่")
+go_btn = tk.Button(
+    master=window,text="ได้แก่",
+    command=show_output
+    )
 go_btn.pack()
 
 # 7 create result area
@@ -29,6 +44,10 @@ output_label = tk.Label(master=window) #ยังไม่แสดงข้อ�
 output_label.pack()
 
 # 8 run
+
+# 9 create function for button
+# 10 ให้แสดงผลลัพธ์
+# 11 run
 
 
 window.mainloop()
