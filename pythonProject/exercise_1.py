@@ -33,13 +33,15 @@ title_label = tk.Label(master=window,text="สูตรคูณแม่")
 title_label.pack(pady=20)
 
 # 5 create input
-number_input = tk.Entry(master=window)
+number_input = tk.Entry(master=window,width=15)
 number_input.pack()
 
 # 6 create btn
 go_btn = tk.Button(
     master=window,text="ได้แก่",
-    command=show_output
+    command=show_output,
+    width=12,
+    height=2
     )
 go_btn.pack()
 
@@ -60,7 +62,8 @@ output_label.pack(pady=20)
 #  ใช้คำสั่ง pad x เพิ่มพื้นที่ว่างในแนวนอน
 #  ใช้คำสั่ง pad y เพิ่มพิ้นที่ว่างในแนวตั้ง
 
-
+# 14 กำหนด ขนามให้กับปุ่มและช่องกรอก
+# ใส่ param width height
 
 window.mainloop()
 
