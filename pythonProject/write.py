@@ -3,7 +3,7 @@ path = r'C:\Users\Kazuomi\Documents\GitHub\jirawan-chuapradit\BasicPython\python
 file = open(path, "w",encoding='utf8')
 
 # wrte something in file
-file.write("hello world")
-file.write("my name is jugjig")
-file.write("ฉันเป็นคนไทย")
+file.write("hello world\n")
+file.write("my name is jugjig\n")
+file.write("ฉันเป็นคนไทย\n")
 file.close()

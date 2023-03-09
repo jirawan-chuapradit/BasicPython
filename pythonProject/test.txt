@@ -1,1 +1,3 @@
-hello worldmy name is jugjigฉันเป็นคนไทย
+hello world
+my name is jugjig
+ฉันเป็นคนไทย
