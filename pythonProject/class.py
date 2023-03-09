@@ -14,3 +14,6 @@ class Tank:
 tank_1 = Tank("zero", 3)
 
 print(tank_1.ammo)
+
+tank_1.ammo += 5
+print(tank_1.ammo)
