@@ -17,3 +17,6 @@ print(tank_1.ammo)
 
 tank_1.ammo += 5
 print(tank_1.ammo)
+
+tank_2 = Tank("first", 10)  # แม้ว่าจะเรียก tank เหมือนกัน แต่ว่า สิ่งที่ได้จะแตกต่างกันขึ้นอยู่กับว่า เราสั่งอะไรไป
+print(tank_2.ammo)
