@@ -11,6 +11,10 @@ title_label.pack()# เอา label แปะ ลงไป
 # text input
 text_input = tk.Entry(master=window)
 text_input.pack()
+
+#  button
+ok_buuton = tk.Button(master=window,text="ok")
+ok_buuton.pack()
 window.mainloop()
 
 
