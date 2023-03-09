@@ -16,6 +16,10 @@ class Tank:
         if self.ammo + ammo <= 10:
             self.ammo + ammo
     
+    def fire(self): # รถ ยิงได้ ทีละนัด ยิงได้เรื่อย ๆ จนกว่า กระสุนจะหมด
+        if self.ammo >0:
+            self.ammo -=1
+    
 tank_1 = Tank("zero", 3)
 
 # print(tank_1.ammo)
@@ -32,3 +36,6 @@ tank_1.add_ammo(5)
 print(tank_1.ammo)
 tank_2.add_ammo(5) # จะเห็นว่า เพิ่มไม่ได้แล้ว เพราะว่าติด limit
 print(tank_2.ammo)
+
+tank_1.fire()
+print(tank_1.ammo)
