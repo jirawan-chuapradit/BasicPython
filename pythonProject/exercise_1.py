@@ -10,6 +10,10 @@ import tkinter as tk
 def show_output():
     num = int(number_input.get()) # คำสั่ง get() will return string
     
+    if num == 0:
+        output_label.configure(text="ผิดที่ไว้ใจ :-(")
+        return
+    
     output = "" # ตอนแรกจะยังไม่มีข้อความอะไร
     # เอา 1 ไป คูณ 12
     for i in range (1, 13):
@@ -48,6 +52,9 @@ output_label.pack()
 # 9 create function for button
 # 10 ให้แสดงผลลัพธ์
 # 11 run
+
+
+# 12 ไม่ต้องการให้คำนวน แม่ 0 เนื่องจาก 0 คูณ อะไรก็ได้ 0 ถ้าใส่ 0 ให้ จบการทำงาน
 
 
 window.mainloop()
