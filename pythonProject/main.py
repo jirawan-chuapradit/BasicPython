@@ -84,10 +84,10 @@
 # for i in range(0,n):
 #     print(i)
 #
-fname = "jig"
+# fname = "jig"
 
-for i in fname:
-    print(i)
+# for i in fname:
+#     print(i)
 
 
 # def get_box_area(width, length, height):
@@ -183,3 +183,37 @@ for i in fname:
 # # mod
 # ans = a % b
 # print(ans)
+
+
+# score = float(input("score is "))
+
+
+# เช่น  jig 
+# j
+# i
+# g
+
+name = input("name: ")
+
+print(name.lower())
+fname = name.lower()
+counter_1 = 0
+counter_2 = 0
+
+for letter  in fname:
+
+    # a e i o u
+    if letter == "a":
+        counter_1 += 1
+    elif letter == "e":
+        counter_1 += 1
+    elif letter == "i":
+        counter_1 += 1
+    elif letter == "o":
+        counter_1 += 1
+    elif letter == "u":
+        counter_1 += 1
+    else:
+        counter_2+=1
+print("สระ " + str(counter_1) + " พยัญชนะ " +str( counter_2))
+
