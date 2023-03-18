@@ -193,27 +193,65 @@
 # i
 # g
 
-name = input("name: ")
+# name = input("name: ")
 
-print(name.lower())
-fname = name.lower()
-counter_1 = 0
-counter_2 = 0
+# print(name.lower())
+# fname = name.lower()
+# counter_1 = 0
+# counter_2 = 0
 
-for letter  in fname:
+# for letter  in fname:
 
-    # a e i o u
-    if letter == "a":
-        counter_1 += 1
-    elif letter == "e":
-        counter_1 += 1
-    elif letter == "i":
-        counter_1 += 1
-    elif letter == "o":
-        counter_1 += 1
-    elif letter == "u":
-        counter_1 += 1
-    else:
-        counter_2+=1
-print("สระ " + str(counter_1) + " พยัญชนะ " +str( counter_2))
+#     # a e i o u
+#     if letter == "a":
+#         counter_1 += 1
+#     elif letter == "e":
+#         counter_1 += 1
+#     elif letter == "i":
+#         counter_1 += 1
+#     elif letter == "o":
+#         counter_1 += 1
+#     elif letter == "u":
+#         counter_1 += 1
+#     else:
+#         counter_2+=1
+# print("สระ " + str(counter_1) + " พยัญชนะ " +str( counter_2))
+
+
+
+
+
+# for loop
+# n = 10
+# for i in range (0, n):
+#     if i == 5:
+#         continue
+#     print(i)
+
+# while
+# counter = 0
+# while (counter < 3):
+#     print(counter)
+#     counter += 1
+
+
+# รับ 5 เข้ามา show 15
+# 1 + 2 + 3  + 4 +  5
+
+#  รับ 2 เข้่ามา  show 3
+#  1 + 2
+
+# รับ 4 เข้ามา show 9
+# 1 + 2 + 3  + 4 
+
+# n = 10
+# #  count up by 1
+# for i in range (0, n, 2):
+#     print(i)
+
+
+#  count down by 1
+n = 10
+for i in range (n, 0, -2):
+    print(i)
 
