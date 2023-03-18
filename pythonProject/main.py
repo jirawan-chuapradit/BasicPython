@@ -251,7 +251,18 @@
 
 
 #  count down by 1
-n = 10
-for i in range (n, 0, -2):
-    print(i)
+# n = 10
+# for i in range (n, 0, -2):
+#     print(i)
+
+
+
+
+import even_odd as eo
+
+num = int(input("enter a number: "))
+expected_output = eo.find_even_odd(num, 100,300)
+print("expected_output: ", expected_output)
+
+
 
